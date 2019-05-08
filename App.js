@@ -26,9 +26,9 @@ export default class App extends Component<Props> {
       <View style={styles.container}>
         <Video
           source={require('./data/cruz.mp3')}   // Can be a URL or a local file.
-          ref={(ref) => {this.player = ref}}                                      // Store reference
-          onBuffer={this.onBuffer}                // Callback when remote video is buffering
-          onError={this.onError}               // Callback when video cannot be loaded
+          ref={(ref) => {this.player = ref}}    // Store reference
+          onBuffer={this.onBuffer}              // Callback when remote video is buffering
+          onError={this.onError}                // Callback when video cannot be loaded
           style={styles.backgroundVideo}
           controls={true}
           audioOnly={true}
